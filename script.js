@@ -386,7 +386,34 @@
 
 
 //  6. Use aswitch statement to determine the type of triangle based on side lengths.
+// let length_1=prompt("enter length of side 1 : ")
+// let length_2=prompt("enter length of side 2 : ")
+// let length_3=prompt("enter length of side 3 : ")
+// switch(true){
+      
+//      case length_1==length_2 && length_2==length_3:
+//          console.log("this triangle is equilateral ")
+//          break;
+//      case length_1==length_2 || length_1==length_3 ||  length_2==length_3 :
+//          console.log("this trangle is Isosceles Triangle")
+//          break;
+//       case length_1!==length_2  && length_2!==length_3 && length_1!==length_3:
+//            console.log("Scalene Triangle")
+//           break;
+    
+//      default:
+//       console.log("dekhty hain bhai")
+
+
+
+// }
+
+
+
 // 7. Write a program to print the season name based on a month number.
+
+
+
 // 8. Create a program to identify the type of food (fruit, vegetable, grain) based on input.
 // 9. Use aswitch statement to return the corresponding zodiac sign based on a birth date.
 // 10. Write a program to determine the type of fuel based on the user’s selection (petrol,
@@ -839,16 +866,285 @@
 
 
 //  7. Write a function to find the largest number in an array of numbers.
-let num=[1,2,3,4,5]
-function FindNum(num){
+// let num=[1,2,3,4,5]
+// function FindNum(num){
  
-  let n=  (Math.max(...num))
-    console.log(num)
-    console.log(n)
-}
-FindNum(num) 
+//   let n=  (Math.max(...num))
+//     console.log(num)
+//     console.log(n)
+// }
+// FindNum(num) 
 
 
 //  8. Create an arrow function to calculate the sum of all numbers in an array.
 //  9. Write a function that checks if an array contains a specific number.
 //  10. Create an arrow function that reverses an array and returns it.
+
+
+
+
+
+
+// Array Exercises
+
+//  push
+
+//  ● Add multiple elements to an array using push and return the updated array.
+
+    // let arr=[]
+    // function ElementAdd(arr){
+    //      return arr.push(6);
+    // }
+    
+    // ElementAdd(arr);
+    // console.log(arr)
+
+
+//  ● Create a function that adds numbers from 1 to 10 to an empty array using push.
+    // let arr=[]
+    // function MultipleNumbers(arr){
+    //     for(let  i=1; i<=10; i++){
+    //         arr.push(i)
+    //     }
+    // }
+    // MultipleNumbers(arr);
+    // console.log(arr)
+
+//  ● Use push to add a nested array [5, 6] to an existing array.
+
+// let  arr=[2,4]
+// let nestedArray=[5,6]
+// arr.push(nestedArray)
+// console.log(arr)
+
+
+//  ● Write a function that uses push to add a string to an array and then logs the new length
+//  of the array.
+
+// let arr=[1,2,3,4]
+// function AddingString(arr){
+//      arr.push("hello")
+// }
+// AddingString(arr);
+// console.log(arr);
+// console.log("this is length : ",arr.length)
+
+//  ● Simulate a stack by adding items with push and removing the last item later.
+
+// let Stack = [];
+
+// function New(Stack) {
+   
+//     for (let i = 0; i <= 5; i++) {
+//         Stack.push(i);
+//     }
+// console.log("Before : ",Stack)
+ 
+//     for (let j =Stack.length - 1; j >= 0; j--) {
+//         console.log( Stack.pop());
+//     }
+// }
+
+// New(Stack);
+// console.log("Final Stack:", Stack);
+
+
+
+
+// pop
+
+
+// ● Create a function that removes the last element of an array and returns it.
+
+// let arr=[1,2,3,4]
+// function Remover(arr){
+//      arr.pop(arr[3])
+// }
+// Remover(arr);
+// console.log(arr)
+
+
+
+
+// ● Write a function that removes elements from an array until it becomes empty using pop.
+
+// let arr=["a","b","c","d",4,6,7]
+// function Remover(arr){
+//     while (arr.length > 0) { 
+//         arr.pop(); 
+//     }
+// }
+// console.log( "Before Removing Elements : ",arr)
+
+// Remover(arr)
+// console.log("After Removing Elements : ",arr)
+
+// ● Use pop to remove the last element of an array, then log the updated array.
+
+// let arr=["anees",3,4]
+// arr.pop()
+// console.log(arr)
+
+// ● Combine push and pop to add and immediately remove an element from an array.
+
+// let arr=[1,2,3]
+// function Combine(arr){
+//     arr.pop()
+//     console.log("before : ",arr)
+//     arr.push(3)
+// }
+// Combine(arr);
+// console.log(arr)
+
+
+// ● Write a function that repeatedly uses pop to retrieve all elements from an array in
+// reverse order.
+
+// let arr=[1,2,3,4,5]
+// function RepeatedlyRemover(arr){
+//    for(let i=0; i=arr.length; i++){
+//        console.log("Poped element : ",arr.pop(i)) 
+//    }
+
+// }
+// RepeatedlyRemover(arr)
+// console.log(arr)
+
+
+
+
+// unshift
+// ● Write a function that adds multiple elements to the beginning of an array using unshift.
+
+// let arr=[2,3,4,5]
+// function UpdatedArray(arr){
+//     arr.unshift(1,6,7,"Anees")
+// }
+
+// UpdatedArray(arr); 
+// console.log(arr)
+
+// ● Use unshift to add a value to the start of an array and return the updated array.
+
+// let arr=["B","C","D","E"]
+// arr.unshift("A")
+// console.log(arr)
+
+// ● Create a function that inserts numbers 1 to 5 into an empty array using unshift.
+
+// let arr=[]
+// function NewArray(arr){
+//     for(let i=1; i<=5; i++){
+//         arr.unshift(i)
+//     }
+// }
+// NewArray(arr)
+// console.log(arr)
+
+// ● Combine Unshift with pop to add a value to the start of an array and remove the last
+// value.
+
+// let arr=["B","C","D","E"]
+// arr.unshift("A")
+// arr.pop("E")
+// console.log(arr)
+
+
+
+// ● Write a function that Repeatedly adds elements to the start of an array until its length is
+// 10
+
+// let arr=[]
+// function Repeatedly(arr){
+//     for(let i=0;i<=arr.length; i++){
+//        arr.unshift(i)
+//        if(arr.length==10){
+//         break;
+//        }
+//     }
+// }
+// Repeatedly(arr)
+// console.log(arr)
+
+
+
+// shift
+ 
+// ● Write a function that removes the first element from an array using shift and returns it.
+
+// let arr=[1,2,3,4]
+
+// function UpdatedArray(arr){
+//     console.log("Removed : ",arr.shift())
+
+// }
+// UpdatedArray(arr)
+// console.log(arr)
+
+// ● Use shiftto remove the first element of an array and log the updated array
+//    let arr=[1,2,3,4]
+//    console.log("Original array : ",arr)
+//    arr.shift()
+//    console.log("updated array : ",arr)
+
+
+
+
+// ● Combine shift and unshift to remove the first element of an array and add a new
+// one at the beginning.
+
+// let arr=["hello","world","lets ","code","together"]
+// console.log("Removed : ",arr.shift())
+// console.log("Added : ",arr.unshift(("hi")))
+// console.log(arr)
+
+
+// ● Write a function that removes elements from an array until it becomes empty using
+// shift.
+
+// let arr=[1,2,3,4,5,6,7,8,9,0]
+// function NewArray(arr){
+//    while(arr.length>0){
+//     console.log(arr.shift())
+//    }
+    
+// }
+// NewArray(arr); 
+// console.log(arr)
+
+
+// ● Use shift to create a queue simulation where elements are added to the end with
+//  push and removed from the front with shift.
+
+// let arr=[]
+
+// for(let j=0; j<=4;j++){
+//    console.log("Added element : ",arr.push(j)) 
+// }
+
+// console.log(arr)
+// for(let i=0; i<=4;i++){
+    
+//     console.log("Removed : ",arr.shift(i))
+// }
+// console.log(arr)
+
+
+
+// splice
+// ● Write a function that uses splice to insert elements into an array at a specific index.
+
+let arr=[1,2,3,4,5]
+function MyArray(arr){
+    arr.splice(1,6)
+    
+}
+MyArray(arr)
+
+console.log(arr)
+// ● Create a function that removes elements from an array using splice and returns the
+// removed elements.
+// ● Usesplicetoreplace elements in an array with new values and return the updated
+// array.
+// ● Write a function that uses splice to remove the last two elements from an array.
+// ● Usesplicetoremove an element at a specific index and insert a new one in its place.
