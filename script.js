@@ -1134,17 +1134,48 @@
 // splice
 // ● Write a function that uses splice to insert elements into an array at a specific index.
 
-let arr=[1,2,3,4,5]
-function MyArray(arr){
-    arr.splice(1,6)
+// let arr=[1,2,3,4,5]
+// function MyArray(arr){
+//     arr.splice(1,0,6,7)
     
-}
-MyArray(arr)
+// }
+// MyArray(arr)
 
-console.log(arr)
+// console.log(arr)
+
+
 // ● Create a function that removes elements from an array using splice and returns the
 // removed elements.
-// ● Usesplicetoreplace elements in an array with new values and return the updated
+
+// array.splice(startIndex, deleteCount, item1, item2, ...)
+
+// let arr=[1,2,3,4,5]
+// function NewArray(arr){
+//   let elements_to_remove = arr.splice(3,2)
+//   console.log(elements_to_remove)
+
+// }
+// NewArray(arr)
+// console.log(arr)
+
+// ● Use splice to replace elements in an array with new values and return the updated
 // array.
+
+// let arr=["a","b","c","d","e","f"]
+
+// arr.splice(2,1,"Anees")
+// console.log(arr)
+
+ 
 // ● Write a function that uses splice to remove the last two elements from an array.
-// ● Usesplicetoremove an element at a specific index and insert a new one in its place.
+
+// let arr=["a","b","c","d","e","f"]
+// arr.splice(4,2)
+// console.log(arr)
+
+// ● Use splice to remove an element at a specific index and insert a new one in its place.
+
+// let arr=["a","b","c","d","e","f"]
+// arr.splice(0,1,"G")
+// console.log(arr)
+
