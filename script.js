@@ -1179,3 +1179,129 @@
 // arr.splice(0,1,"G")
 // console.log(arr)
 
+// slice
+
+
+// ● Write a function that extracts a portion of an array using slice and returns it.
+
+// let arr=["apple","banana","orange","mango","watermelon"]
+// const NewArray=(arr)=>{
+    
+//     console.log( arr.slice(1,4))
+   
+// }
+// NewArray(arr);
+
+
+// ● Use slice to create a shallow copy of an array.
+
+// let arr=["apple","banana","orange","mango","watermelon"]
+// let NewArray=arr.slice(0,4)
+// console.log(NewArray)
+
+
+// ● Write a function that returns the last three elements of an array using slice.
+
+// let arr=["apple","banana","orange","mango","watermelon"]
+// const NewArray=(arr)=>{
+    
+//     console.log( arr.slice(2,5))
+   
+// }
+// NewArray(arr)
+
+// String.slice(start?: number, end?: number): string
+
+// ● Create a function that uses slice to extract every element except the first.
+
+// let arr=[1,2,3,4,5]
+// function NewArray(arr){
+    
+//     console.log(arr.slice(1,5))
+   
+// }
+// NewArray(arr);
+
+// ● Write a function that extracts a portion of an array and combines it with another using
+// slice and concat.
+
+// let arr=["a","b","c","d","e","f","g"]
+// let newArray=[1,2,3,4]
+// function Extracts(arr){
+
+//    console.log(arr.concat(newArray))
+
+
+// }
+// Extracts(arr);
+
+
+// concat
+
+
+// ● Write a function that combines two arrays using concat and returns the result.
+
+// let arr=[1,2,3,4,5]
+// let arr2=[6,7,8,9]
+// function Combines(){
+//     console.log(arr.concat(arr2))
+// }
+// Combines();
+
+
+// ● Use concat to merge multiple arrays into a single array.
+
+// let arr0=["a","b","c","d","e","f","g"]
+// let arr1=[1,2,3,4,5]
+// let arr2=[6,7,8,9]
+
+// let new_var=arr0.concat(arr1,arr2)
+// console.log(new_var)
+
+// // ● Create a function that appends an array to another and logs the length of the resulting
+// // array.
+
+// let arr=["a","b","c","d","e","f","g"]
+// let arr2=[6,7,8,9]
+// function Array(arr){
+//      let new_var=arr.concat(arr2)
+//      console.log(new_var.length)
+// }
+// Array(arr);
+
+// ● Write a function that combines an array with a single value using concat.
+
+// let arr1=[1,2,3,4,5]
+// let val=6;
+
+// function Array(arr1){
+ 
+//     console.log(arr1.concat(val))
+ 
+// }
+// Array(arr1);
+
+// ● Use concat to merge arrays of numbers, strings, and objects into one array.
+// let arr1=[]
+// let str="Anees"
+// let number=2;
+// let newArray=arr1.concat(str,number)
+// console.log(newArray)
+
+
+
+// forEach
+
+// ● Write a function that logs every element of an array using forEach.
+
+// let arr = ["a","b","c","d","e","f"]
+// arr.forEach(function(arr){
+//     console.log(arr)
+// }
+// )
+
+
+// ● UseforEachto calculate the sum of all elements in an array.
+// ● Create a function that uses forEach to log the index and value of each array element.
+// ● Write a function that doubles each element in an array and logs the result using
+// forEach.
